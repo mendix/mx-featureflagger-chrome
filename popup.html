@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			html {
+				font-family: "Lucida Console", Monaco, monospace;
+				color: grey;
+			}
+
+			body {
+				background: white;
+				border-radius: 10px;
+			}
+
+			.selected {
+				background: white;
+				border-width: 2px !important;
+				border-color: blue !important;
+				color: blue;
+				padding: 7px !important;
+			}
+
+			.buttonMouseDown {
+				background: darkgray;
+				border-color: black;
+			}
+
+			.removeImage {
+				padding-left: 10px;
+				opacity: 0.5;
+			}
+
+			:hover {
+				opacity: 1;
+			}
+
+			.featureFlagList {
+				min-width: 200px;
+				display: contents;
+
+				list-style-type: none;
+
+				position: relative;
+				flex: 1 1 0px;
+
+				text-align: center;
+			}
+
+			.featureFlag {
+				align-self: center;
+				font-size: medium;
+
+				min-width: 100px;
+				padding: 8px;
+				margin: 8px;
+				border: 1px grey solid;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			.newFF {
+				background: transparent;
+				align-self: center;
+				font-size: medium;
+
+				min-width: 100px;
+				padding: 8px;
+				margin: 0 8px;
+				border: 1px lightblue solid;
+				border-radius: 5px;
+				cursor: text;
+			}
+
+			::placeholder {
+				font-size: "10px";
+				font-style: italic;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<ul id="featureFlagList" class="featureFlagList"></ul>
+		<input
+			class="newFF"
+			type="text"
+			id="newFF"
+			name="newFF"
+			placeholder="add new..."
+		/>
+	</body>
+	<script src="popup.js"></script>
+</html>
