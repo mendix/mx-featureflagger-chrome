@@ -1,7 +1,7 @@
 {
-	"name": "Feature Flags",
+	"name": "Mx Studio Feature Flagger",
 	"version": "1.0",
-	"description": "Makes using feature flags so easy your dog could do it!",
+	"description": "Makes using feature flags in Mendix Studio so easy your dog could do it!",
 	"permissions": ["activeTab", "storage"],
 	"browser_action": {
 		"default_popup": "popup.html",
