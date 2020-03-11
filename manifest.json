@@ -3,7 +3,6 @@
 	"version": "1.0",
 	"description": "Makes using feature flags so easy your dog could do it!",
 	"permissions": ["activeTab", "declarativeContent", "storage", "tabs"],
-	"options_page": "options.html",
 	"background": {
 		"scripts": ["background.js"],
 		"persistent": false
